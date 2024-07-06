@@ -1,0 +1,112 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Sign Up Form </title>
+        <link rel="stylesheet" href="login.css">
+        <script src="http://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="register.css">
+        <title>Registration Form</title>
+              <!-- Daisy and Talwind Khala -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom css -->
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="'stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section class="bg-#[0a3efb]">
+
+
+            <div class="container">
+                <div class="form-box">
+                    <div class="message" th:if="${message != null}"> 
+                        <!-- [[${message}]]-->
+                    </div>
+                    <h2>Registration Form</h2>
+                    <h2>__________________</h2>
+                    <br>
+                    <br>
+                    <form th:action="@{/registration}" method="post" role="form" th:object="${user}">
+                        <div class="input-group">
+                            <br>
+                            <br>
+                            <label> <b>Name:</b></label>
+                            <div class="input-field" id="nameField">
+                                <i class="fa-solid fa-user"></i>
+                                <!-- <input type="text" placeholder="Name"> -->
+                                <input type="text" placeholder="Username" th:field="*{name}" />
+                            </div>
+                            <label><b>NID No.:</b></label>
+                            <div class="input-field" id="nameField">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="nid" th:field="*{nid}" />
+                            </div>
+                             <!-- <label><b>Date of Birth:</b></label>
+                            <div class="input-field" id="nameField">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="date_of_birth" th:field="*{date_of_birth}" />
+                            </div>  -->
+    
+                            <!-- <label><b>Occupation:</b></label>
+                            <div class="input-field">  
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" placeholder="occupation" th:field="*{occupation}" />
+                            </div>  -->
+                            
+                            <label><b>Phone_Number:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="phone_number" th:field="*{phone_number}" />
+                            </div>
+
+                            <label><b>E-mail:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="e-mail" th:field="*{gender}" />
+                            </div>
+
+                            <label><b>Password:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="password" th:field="*{phone_number}" />
+                            </div>
+
+                           <!-- <label><b>Address:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="address" th:field="*{address}" />
+                            </div> -->
+                            <!-- <label><b>Gender:</b></n></label> 
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="gender" th:field="*{address}" />
+                            </div> -->
+                               <!--  <label><b>E-mail:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="e-mail" th:field="*{gender}" />
+                            </div>
+                            <label><b>Phone_Number:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="phone_number" th:field="*{phone_number}" />
+                            </div>
+                            <label><b>Password:</b></label>
+                            <div class="input-field" >
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="password" th:field="*{phone_number}" />
+                            </div>  -->
+                            <div class="btn-field">
+                                <button type="button" class="registerbtn">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>

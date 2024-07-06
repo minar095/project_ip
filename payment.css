@@ -1,0 +1,86 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2196f3;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.payment-method {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.payment-method input[type="radio"] {
+    vertical-align: middle;
+}
+
+.payment-method label {
+    cursor: pointer;
+}
+
+.payment-details {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="month"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}

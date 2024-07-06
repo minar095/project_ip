@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Profile</title>
+<meta charset="UTF-8">,
+<meta http-equiv="X-VA_Compatible" content="IE=edge">
+<meta name="viewpoint" content="width=device-width,initital-scale=1.0">
+<link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+    </header>
+    <div class="profile-form">
+    <img src="profile.png" alt="Profile picture">
+    <form action="/profile/create-update-delete" method="post" enctype="multipart/form-data">
+      <h4>Profile Information:</h4>
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="ID" placeholder="ID No.">
+      <input type="text" name="ID" placeholder="Gender">
+      <input type="text" name="ID" placeholder="Occupation">
+      <input type="text" name="ID" placeholder="Present Address">
+      <input type="text" name="ID" placeholder="Permanent Address">
+      <input type="text" name="ID" placeholder="Status">
+      <!-- <textarea name="bio" placeholder="Bio"></textarea> -->
+      <!--<h5>Input Image</h5>
+      <input type="file" name="profile_picture">-->
+      <input type="submit" name="action" value="Insert">
+      <input type="submit" name="action" value="Delete">
+      <input type="submit" name="action" value="Update">
+    </form>
+  </div>
+</body>

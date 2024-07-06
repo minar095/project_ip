@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    color: #666;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(33% - 20px); /* Account for margin and borders */
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.apartment-details ul {
+    list-style: none;
+    padding: 0;
+}
+.apartment-details li {
+    margin-bottom: 5px;
+}
+
+.apartment-images {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 200px;
+    margin: 5px;
+}
+
+.neighborhood p {
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

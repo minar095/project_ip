@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Information</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Payment Information</h1>
+        <p>Please enter your payment details to complete your purchase.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Payment Method</legend>
+                <div class="payment-method">
+                    <input type="radio" id="credit-card" name="payment_method" value="credit_card" checked>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="debit-card" name="payment_method" value="debit_card">
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="debit-card" name="payment_method" value="debit_card">
+                    <label for="debit-card ">
+                        <a href="cash.html"  class="link">Cash</a> </label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="debit-card" name="payment_method" value="debit_card">
+                    <label for="debit-card">Online Banking </label>
+                </div>
+                </fieldset>
+
+            <div id="credit-card-details" class="payment-details">
+                <label for="cardholder-name">Cardholder Name:</label>
+                <input type="text" id="cardholder-name" name="cardholder_name" required>
+
+                <label for="card-number">Card Number:</label>
+                <input type="tel" id="card-number" name="card_number" inputmode="numeric" pattern="[0-9]{16}" required placeholder="XXXX XXXX XXXX XXXX">
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" name="expiry_date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="tel" id="cvv" name="cvv" inputmode="numeric" pattern="[0-9]{3}" required placeholder="XXX">
+            </div>
+
+            <fieldset> 
+                <legend>Customer Information</legend>
+                <label for="billing-name">Name:</label>
+                <input type="text" id="billing-name" name="billing_name" required>
+
+                <label for="billing-address">Address:</label>
+                <textarea id="billing-address" name="billing_address" required></textarea>
+
+                <label for="billing-city">City:</label>
+                <input type="text" id="billing-city" name="billing_city" required>
+
+                <label for="billing-state">State/Province:</label>
+                <input type="text" id="billing-state" name="billing_state" required>
+
+                <label for="billing-postal-code">Postal Code:</label>
+                <input type="text" id="billing-postal-code" name="billing_postal_code" required pattern="[0-9]{5}">
+
+               
+            </fieldset>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+
+        <p>**Important:** We use secure encryption technology to protect your payment information. Your credit card details are never stored on our servers.</p>
+    </div>
+</body>
+</html>

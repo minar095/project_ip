@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background-image: url(pro_bg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+header {
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+}
+main {
+    padding: 20px;
+}
+form {
+    margin-left: 50px;
+    width: 40%;
+    align-items: center;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color: rgb(249, 248, 248);
+    background: #1333ea;
+    transition: all 0.4s ease 0s;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+.profile-form{
+    margin-left: 60px;
+    color: #000;
+    align-items: center;
+}
+.profile-form img{
+    margin-left: 18px;
+    padding: 15px;
+}
+
+
+

@@ -1,0 +1,160 @@
+<html lang="en">
+<!--This is heading part-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rental House Mannagement System</title>
+        <link rel="stylesheet" href="FAQs.css">
+        <link rel="'stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.7/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header-1">
+            <div class="nav-logo header-box">
+                <div class="logo">
+                    <i class="bx bx-home-alt logo-icon"></i>
+                    <span class="logo-name">ABASHON</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="decoration.html" class="link">Decoration</a>
+                    <a href="faq.html" class="link">FAQs</a>
+                    <a href="login.html" class="link">Sign IN</a>
+                </div>
+            </div>
+            <div class="nav-profile header-box">
+                <div class="icons">
+                    <i class="bx bx-customize bx-flip-vertical icon"></i>
+                    <i class="bx bx-cog icon"></i>
+                    <i class="bx bx-bell icon bell"></i>
+                </div>
+                <div class="profile">
+                    <!-- <i class="bx profile icon"></i> -->
+                    <img src="profile.png" alt="profile-image">
+                </div>
+            </div>
+        </header>
+        <section class="faqs" id="faq">
+          <!-- <h1 class="heading">FAQs</h1>
+          <div class="box-container">
+            <div>
+              <h3 class="faq-question"><span>How do I create an account?</span><i class="fas fa-angel-down"></i></h3>
+              <p class="faq-answer">To create an account, simply click on the "Create Account" button on the homepage and enter your email address and a password. You will then be able to log in to your account and start using our services.</p>
+            </div>
+            <div>
+              <h3 class="faq-question">What is your refund policy?</h3>
+              <p class="faq-answer">We offer a full refund on all products and services within 30 days of purchase. To request a refund, please contact our customer support team.</p>
+            </div>
+            <div>
+              <h3 class="faq-question">How do I contact customer support?</h3>
+              <p class="faq-answer">You can contact our customer support team by email, phone, or live chat. Our email address is support@example.com, our phone number is 1-800-555-1212, and our live chat is available on our website.</p>
+            </div> 
+        </div> -->
+          <div class="accordion">
+            <div class="image-box">
+                <img src="faqs.jpg" alt="  ">
+            </div>
+            <div class="accordion-text">
+                <div class="title">FAQ</div>
+            <ul class="faq-text">
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">How do I create an account?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>To create an account, simply click on the "Create Account" button on the homepage and enter your email address and a password. You will then be able to log in to your account and start using our services.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">How does it benefit tenants?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>Tenants can easily search for available properties, submit maintenance requests, and make rent payments online. It improves transparency and communication with property owners.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">How do I handle maintenance requests through the system?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>Tenants can submit maintenance requests online, and property managers can assign tasks to maintenance personnel, track progress, and communicate updates.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">What happens in case of late rent payments?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>The system can automate late fee calculations and reminders for tenants, helping property owners enforce rent payment policies.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">What is tenant screening, and why is it important?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>Tenant screening is the process of evaluating potential tenants to determine their suitability for a rental property. It involves background checks, credit checks, and rental history verification to ensure that tenants are reliable and trustworthy.</p>
+                    <span class="line"></span>
+                </li>
+            </ul>
+            </div>
+          </div>
+          <script>
+            let li = document.querySelectorAll(".faq-text li");
+            for(var i=0;i<li.length;i++){
+                li[i].addEventListener("click",(e)=>{
+                    let clickedLi;
+                    if(e.target.classList.contains("question-arrow")){
+                        clickedLi = e.target.parentElement;
+                    }else{
+                        clickedLi = e.target.parentElement.parentElement;
+                    }
+                    clickedLi.classList.toggle("showAnswer");
+                // console.log(e.target);
+
+            });
+        }
+          </script>
+        </section>
+        <section class="newsletter container">
+            <h2>Have Question in mind? <br>Let us help you</h2>
+            <form>
+                <input type="email" name="" id="email-box" placeholder="yourmail@gmail.com" required>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </section>
+      <section class="footer">
+          <div class="footer-container container">
+              <h2>Abashon</h2>
+              <div class="footer-box">
+                  <h3>Quick Links</h3>
+                  <a href="#">Agency</a>
+                  <a href="#">Building</a>
+                  <a href="#">Rates</a>
+              </div>
+              <div class="footer-box">
+                  <h3>Locations</h3>
+                  <a href="#">Dhaka</a>
+                  <a href="#">Chittagong</a>
+                  <a href="#">Rangpur</a>
+              </div>
+              <div class="footer-box">
+                  <h3>Contact</h3>
+                  <a href="#">+88 01851189723</a>
+                  <a href="#">mdminhazulislamminar095@gmail.com</a>
+                  <div class="social">
+                      <a href="#"><i class='bx bxl-facebook'></i></a>
+                      <a href="#"><i class='bx bxl-twitter'></i></a>
+                      <a href="#"><i class='bx bxl-instragram'></i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </body>
+</html>
+
+
+
